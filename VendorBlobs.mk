@@ -22,11 +22,14 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/schS738c/proprietary/bin/rild:system/bin/rild \
     vendor/samsung/schS738c/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/samsung/schS738c/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
+    vendor/samsung/schS738c/proprietary/lib/libsec-ril-cdma.so:system/lib/libsec-ril-cdma.so \
     vendor/samsung/schS738c/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so
 
 ## Camera
 PRODUCT_COPY_FILES += \
     vendor/samsung/schS738c/proprietary/lib/libcamera.so:system/lib/libcamera.so \
+    vendor/samsung/schS738c/proprietary/lib/libcamera_client.so:system/lib/libcamera_client.so \
+    vendor/samsung/schS738c/proprietary/lib/libcameraservice.so:system/lib/libcameraservice.so \
     vendor/samsung/schS738c/proprietary/lib/libmmjpeg.so:system/lib/libmmjpeg.so \
     vendor/samsung/schS738c/proprietary/lib/libarccamera.so:system/lib/libarccamera.so \
     vendor/samsung/schS738c/proprietary/lib/libcaps.so:system/lib/libcaps.so \

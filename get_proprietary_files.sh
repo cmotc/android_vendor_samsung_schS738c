@@ -22,11 +22,15 @@
     adb pull system/bin/rild        proprietary/bin/rild
     adb pull system/lib/libril.so        proprietary/lib/libril.so
     adb pull system/lib/libsec-ril.so        proprietary/lib/libsec-ril.so
+    adb pull system/lib/libsec-ril-cdma.so        proprietary/lib/libsec-ril-cdma.so
     adb pull system/lib/libsecril-client.so        proprietary/lib/libsecril-client.so
 
 ## Camera
 
     adb pull system/lib/libcamera.so        proprietary/lib/libcamera.so
+    adb pull system/lib/libcamera_client.so        proprietary/lib/libcamera_client.so
+    adb pull system/lib/libcameraservice.so        proprietary/lib/libcameraservice.so
+    adb pull system/lib/liboemcamera.so         proprietary/lib/liboemcamera.so
     adb pull system/lib/libmmjpeg.so        proprietary/lib/libmmjpeg.so
     adb pull system/lib/libarccamera.so        proprietary/lib/libarccamera.so
     adb pull system/lib/libcaps.so        proprietary/lib/libcaps.so
@@ -52,9 +56,9 @@
 
 ## Atheros firmware
 
-    adb pull system/wifi/ath6k/AR6003/hw2.1.1/athtcmd_ram.bin        proprietary/wifi/ath6k/AR6003/hw2.1.1/athtcmd_ram.bin
-    adb pull system/wifi/ath6k/AR6003/hw2.1.1/bdata.bin        proprietary/wifi/ath6k/AR6003/hw2.1.1/bdata.bin
-    adb pull system/wifi/ath6k/AR6003/hw2.1.1/fw-4.bin        proprietary/wifi/ath6k/AR6003/hw2.1.1/fw-4.bin
+    adb pull system/etc/firmware/ath6k/AR6003/hw2.1.1/athtcmd_ram.bin        proprietary/wifi/ath6k/AR6003/hw2.1.1/athtcmd_ram.bin
+    adb pull system/etc/firmware/ath6k/AR6003/hw2.1.1/bdata.bin        proprietary/wifi/ath6k/AR6003/hw2.1.1/bdata.bin
+    adb pull system/etc/firmware/ath6k/AR6003/hw2.1.1/fw-3.bin        proprietary/wifi/ath6k/AR6003/hw2.1.1/fw-3.bin
 
 ## Adreno 200 GPU
 

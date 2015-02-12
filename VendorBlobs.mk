@@ -14,50 +14,53 @@
 #
 
 ## Prebuilt libraries that are needed to build open-source libraries
-PRODUCT_COPY_FILES += \
-    vendor/samsung/schS738c/proprietary/lib/libcamera.so:obj/lib/libcamera.so
+#PRODUCT_COPY_FILES += \
+#    vendor/samsung/schS738c/proprietary/lib/libcamera.so:obj/lib/libcamera.so
 
 ## RIL (Radio Interface Relay)
 PRODUCT_COPY_FILES += \
     vendor/samsung/schS738c/proprietary/bin/rild:system/bin/rild \
     vendor/samsung/schS738c/proprietary/lib/libril.so:system/lib/libril.so \
-    vendor/samsung/schS738c/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/schS738c/proprietary/lib/libsec-ril-cdma.so:system/lib/libsec-ril-cdma.so \
     vendor/samsung/schS738c/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so
 
+#    vendor/samsung/schS738c/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
+
 ## Camera
 PRODUCT_COPY_FILES += \
-    vendor/samsung/schS738c/proprietary/lib/libcamera.so:system/lib/libcamera.so \
     vendor/samsung/schS738c/proprietary/lib/libcamera_client.so:system/lib/libcamera_client.so \
     vendor/samsung/schS738c/proprietary/lib/libcameraservice.so:system/lib/libcameraservice.so \
     vendor/samsung/schS738c/proprietary/lib/libmmjpeg.so:system/lib/libmmjpeg.so \
-    vendor/samsung/schS738c/proprietary/lib/libarccamera.so:system/lib/libarccamera.so \
-    vendor/samsung/schS738c/proprietary/lib/libcaps.so:system/lib/libcaps.so \
-    vendor/samsung/schS738c/proprietary/lib/libseccamera.so:system/lib/libseccamera.so \
-    vendor/samsung/schS738c/proprietary/lib/libseccameraadaptor.so:system/lib/libseccameraadaptor.so
+
+#    vendor/samsung/schS738c/proprietary/lib/libseccamera.so:system/lib/libseccamera.so \
+#    vendor/samsung/schS738c/proprietary/lib/libseccameraadaptor.so:system/lib/libseccameraadaptor.so
+#    vendor/samsung/schS738c/proprietary/lib/libcamera.so:system/lib/libcamera.so \
+#    vendor/samsung/schS738c/proprietary/lib/libcaps.so:system/lib/libcaps.so \
+#    vendor/samsung/schS738c/proprietary/lib/libarccamera.so:system/lib/libarccamera.so 
 
 ## FM
 PRODUCT_COPY_FILES += \
     vendor/samsung/schS738c/proprietary/bin/fmconfig:system/bin/fmconfig \
-    vendor/samsung/schS738c/proprietary/bin/fm_qsoc_patches:system/bin/fm_qsoc_patches \
     vendor/samsung/schS738c/proprietary/lib/libqmi.so:system/lib/libqmi.so \
     vendor/samsung/schS738c/proprietary/lib/libqmiservices.so:system/lib/libqmiservices.so \
     vendor/samsung/schS738c/proprietary/lib/libidl.so:system/lib/libidl.so \
     vendor/samsung/schS738c/proprietary/lib/libdsutils.so:system/lib/libdsutils.so
+#    vendor/samsung/schS738c/proprietary/bin/fm_qsoc_patches:system/bin/fm_qsoc_patches 
 
 ## Media
 PRODUCT_COPY_FILES += \
     vendor/samsung/schS738c/proprietary/lib/libmmipl.so:system/lib/libmmipl.so \
     vendor/samsung/schS738c/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
     vendor/samsung/schS738c/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
-    vendor/samsung/schS738c/proprietary/lib/libmmparser_divxdrmlib.so:system/lib/libmmparser_divxdrmlib.so \
     vendor/samsung/schS738c/proprietary/lib/libDivxDrm.so:system/lib/libDivxDrm.so
+
+#    vendor/samsung/schS738c/proprietary/lib/libmmparser_divxdrmlib.so:system/lib/libmmparser_divxdrmlib.so \
 
 ## Atheros firmware
 PRODUCT_COPY_FILES += \
     vendor/samsung/schS738c/proprietary/wifi/ath6k/AR6003/hw2.1.1/athtcmd_ram.bin:system/etc/firmware/ath6k/AR6003/hw2.1.1/athtcmd_ram.bin \
     vendor/samsung/schS738c/proprietary/wifi/ath6k/AR6003/hw2.1.1/bdata.bin:system/etc/firmware/ath6k/AR6003/hw2.1.1/bdata.bin \
-    vendor/samsung/schS738c/proprietary/wifi/ath6k/AR6003/hw2.1.1/fw-4.bin:system/etc/firmware/ath6k/AR6003/hw2.1.1/fw-4.bin \
+    vendor/samsung/schS738c/proprietary/wifi/ath6k/AR6003/hw2.1.1/fw-3.bin:system/etc/firmware/ath6k/AR6003/hw2.1.1/fw-3.bin \
 
 ## Adreno 200 GPU
 PRODUCT_COPY_FILES += \
